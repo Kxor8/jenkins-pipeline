@@ -11,7 +11,7 @@ pipeline {
             steps {
                 echo 'Building the application...'
                 sh 'echo "Compiling source code..."'
-                echo 'Running $BRANCH_NAME pipeline'
+                echo 'Running ${env.BRANCH_NAME} pipeline'
             }
         }
 
